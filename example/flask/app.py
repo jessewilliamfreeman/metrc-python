@@ -6,9 +6,12 @@ import yaml
 
 from flask import Flask, jsonify, request
 
+from flask_cors import CORS
+
 from metrc.client import Client
 
 app = Flask(__name__)
+CORS(app)
 
 vendor_keys = {}
 
