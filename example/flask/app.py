@@ -33,6 +33,7 @@ def user_key():
 	validated = metrc_client.validate(
 		request.form['state'], 
 		request.form['user_key']
+		#request.form['env']
 	)
 
 	if validated:

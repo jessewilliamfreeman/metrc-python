@@ -5,3 +5,4 @@ vendor_keys:
     MD: '...'
     ME: '...'
     OR: '...'
+    environment: '"production" or"sandbox"'
