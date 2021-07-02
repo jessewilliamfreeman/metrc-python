@@ -2,20 +2,10 @@ import requests
 
 class Client(object):
 
-	def __init__(self, vendor_keys):
+	def __init__(self, vendor_keys,environment):
 		self.vendor_keys = vendor_keys
-		self.environment = vendor_keys['environment']
-		
-	"""
-	states = {
-		'MD': 'https://sandbox-api-md.metrc.com',
-		'OR': 'https://sandbox-api-or.metrc.com',
-		'CO': 'https://sandbox-api-co.metrc.com',
-		'LA': 'https://sandbox-api-or.metrc.com',
-		'ME': 'https://sandbox-api-md.metrc.com',
-		'AK': 'https://sandbox-api-or.metrc.com'
-	}
-	"""
+		self.environment = environment
+
 	states ={
 		'sandbox_states':{
 			'MD': 'https://sandbox-api-md.metrc.com',
@@ -34,12 +24,10 @@ class Client(object):
 			'AK': 'https://api-or.metrc.com'
 		}
 	}
-	#env='sandbox' 
 
 	def validate(self, state, user_key):
-		#env='production'
-		#base_url = Client.states[state]
-		environment = self.vendor_keys['environment']
+
+		environment = self.environment
 		if(environment =='sandbox'):
 			base_url = Client.states['sandbox_states'][state]
 		elif(environment=='production'):

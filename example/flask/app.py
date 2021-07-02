@@ -15,9 +15,11 @@ CORS(app)
 
 vendor_keys = {}
 
-with open('vendor_keys.yml') as f:
-	vendor_keys = yaml.load(f, Loader=yaml.FullLoader)
-	vendor_keys= vendor_keys['vendor_keys']
+with open('configs.yml') as f:
+	config_data = yaml.load(f, Loader=yaml.FullLoader)
+	vendor_keys= config_data['vendor_keys']
+	environment= config_data['environment']
+	
 
 @app.route('/')
 def hello_world():
@@ -26,14 +28,13 @@ def hello_world():
 @app.route('/user_key', methods = ['POST'])
 def user_key():
 	
-	metrc_client = Client(vendor_keys)
+	metrc_client = Client(vendor_keys,environment)
 
 	print(request.form)
 
 	validated = metrc_client.validate(
 		request.form['state'], 
 		request.form['user_key']
-		#request.form['env']
 	)
 
 	if validated:
