@@ -1,7 +1,7 @@
 # metrc-python
 Python backend for connecting with Metrc
 
-## Instructions
+## Instructions for example Flask server
 
 Install [pipenv](https://pypi.org/project/pipenv/)
 
