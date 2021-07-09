@@ -1,5 +1,0 @@
-requests
-flask
-pyyaml
-flask_cors
-metrc-client-python

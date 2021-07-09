@@ -1,0 +1,8 @@
+vendor_keys:
+    AK: '...'
+    CO: '...'
+    LA: '...'
+    MD: '...'
+    ME: '...'
+    OR: '...'
+    environment: '"production" or"sandbox"'

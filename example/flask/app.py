@@ -1,12 +1,14 @@
 import sys
 
+sys.path.append('../..')
+
 import yaml
 
 from flask import Flask, jsonify, request
 
 from flask_cors import CORS
 
-from metrc import Client
+from metrc.client import Client
 
 app = Flask(__name__)
 CORS(app)
