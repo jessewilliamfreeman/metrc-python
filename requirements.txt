@@ -1,4 +1,0 @@
-requests
-flask
-pyyaml
-flask_cors
