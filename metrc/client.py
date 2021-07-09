@@ -8,20 +8,40 @@ class Client(object):
 
 	states ={
 		'sandbox_states':{
-			'MD': 'https://sandbox-api-md.metrc.com',
-			'OR': 'https://sandbox-api-or.metrc.com',
+			'AK': 'https://sandbox-api-or.metrc.com',
+			'CA': 'https://sandbox-api-ca.metrc.com',
+			'DC': 'https://sandbox-api-dc.metrc.com',
 			'CO': 'https://sandbox-api-co.metrc.com',
 			'LA': 'https://sandbox-api-or.metrc.com',
 			'ME': 'https://sandbox-api-md.metrc.com',
-			'AK': 'https://sandbox-api-or.metrc.com'
+			'MA': 'https://sandbox-api-ma.metrc.com',
+			'MD': 'https://sandbox-api-md.metrc.com',
+			'MI': 'https://sandbox-api-mi.metrc.com',
+			'MO': 'https://sandbox-api-mo.metrc.com',
+			'MT': 'https://sandbox-api-mt.metrc.com',
+			'NV': 'https://sandbox-api-nv.metrc.com',
+			'OH': 'https://sandbox-api-oh.metrc.com',
+			'OK': 'https://sandbox-api-ok.metrc.com',
+			'OR': 'https://sandbox-api-or.metrc.com',
+			'WV': 'https://sandbox-api-wv.metrc.com'
 		},
 		'production_states':{
-			'MD': 'https://api-md.metrc.com',
-			'OR': 'https://api-or.metrc.com',
+			'AK': 'https://api-ak.metrc.com',
+			'CA': 'https://api-ca.metrc.com',
+			'DC': 'https://api-dc.metrc.com',
 			'CO': 'https://api-co.metrc.com',
-			'LA': 'https://api-or.metrc.com',
-			'ME': 'https://api-md.metrc.com',
-			'AK': 'https://api-or.metrc.com'
+			'LA': 'https://api-la.metrc.com',
+			'ME': 'https://api-me.metrc.com',
+			'MA': 'https://api-ma.metrc.com',
+			'MD': 'https://api-md.metrc.com',
+			'MI': 'https://api-mi.metrc.com',
+			'MO': 'https://api-mo.metrc.com',
+			'MT': 'https://api-mt.metrc.com',
+			'NV': 'https://api-nv.metrc.com',
+			'OH': 'https://api-oh.metrc.com',
+			'OK': 'https://api-ok.metrc.com',
+			'OR': 'https://api-or.metrc.com',
+			'WV': 'https://api-wv.metrc.com'	
 		}
 	}
 
